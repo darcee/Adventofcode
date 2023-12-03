@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo">Fetch a file to change this text.</p>
+<script>
+
+    fetch("input.txt")
+    .then(input => input.text())
+    .then(inputText => console.log(inputText));
+</script>
+</body>
+</html>
